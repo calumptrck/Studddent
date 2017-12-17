@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.title {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.desc {
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.addDiscount {
+  background-color: #f3e45d;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 0.75em;
+  font-size: 13px;
+}
+
+.addDiscount:hover {
+  background-color: #e6d759;
+}
+
+.entries {
+  margin-top: 40px;
+}
+
+
+.entry {
+  height: 110px;
+  width: 90%;
+  background-color: rgb(39, 39, 39);
+  border-radius: 0.75em;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  float: left;
+  margin-bottom: 30px;
+}
+
+.entry img {
+  margin-left: auto;
+	margin-right: auto;
+  display: block;
+  margin-top: 32px;
+  width: 150px;
+  height: 44px;
+}
+
+.tnbg {
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  border-top-left-radius: 0.75em;
+  border-bottom-left-radius: 0.75em;
+}
+
+.middle {
+  display: block;
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  float: left;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.headline {
+  font-family: Work Sans;
+  font-weight: 600;
+  color: #fff;
+}
+
+.url {
+  font-family: Work Sans;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 10px;
+  color: #fff;
+}
+
+.feature {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 19%;
+  color: #fff
+}
+
+.features {
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  padding: 4%;
+}
+
+.voting {
+  display: block;
+  display: inline-block;
+  float: right;
+  width: 5px;
+  margin-right: 35px;
+  margin-top: 15px;
+}
+
+.count {
+  font-family: Work Sans;
+  font-weight: 600;
+  color: #d6c554;
+}
