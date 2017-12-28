@@ -7,14 +7,32 @@
     <hr>
     <div class="entries">
         <% posts.forEach(function(post){ %>
+          <a href="<%= post.url %>">
           <div class="block">
               <div class="entry">
                   <div class="tnbg">
-                    <img src="<%= post.image %>" alt="amazon"/>
+                    <img src="<%= post.image %>" alt="<%= post.name %>>"/>
                   </div>
+                  
+                  
                   <div class="middle">
                     <div class="headline"><%= post.name %></div>
-                    <div class="url"><%= post.url %></div>
+                    <div class="url">
+                      <script language=javascript>
+                      var txt='<%= post.url %>>';
+                
+                      var re1='.*?';	// Non-greedy match on filler
+                      var re2='((?:[a-z][a-z\\.\\d\\-]+)\\.(?:[a-z][a-z\\-]+))(?![\\w\\.])';	// Fully Qualified Domain Name 1
+                
+                      var p = new RegExp(re1+re2,["i"]);
+                      var m = p.exec(txt);
+                      if (m != null)
+                      {
+                          var fqdn1=m[1];
+                          document.write(fqdn1.replace(/</,"&lt;"));
+                      }
+                      </script>
+                      </div>
                     <div class="feature"><%= post.feature %></div>
                   </div>
                   <div class="features">
@@ -31,17 +49,17 @@
                   <div class="down"><a href="#"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></div>
                 </div>
             </div>
+            </a>
         <% }); %>
     </div>
   <br><br><br><br><br><br>
   <p>TODO</p>
-  <ul> 
-      <li>pull from db</li>
-      <li>filter by eligibility</li>
+  <ul>  
       <li>set up voting</li>
       <li>sort by vote count</li>
       <li>create page for adding link</li>
       <li>launch</li>
     </ul>
+    
   </body>
 <% include footer %>

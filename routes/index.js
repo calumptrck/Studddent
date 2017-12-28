@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
       console.log(err);
     } else {
       res.render('index', {
-          title: 'MainStuff',
+          title: 'Studddent',
           posts: posts,
       });
     }
