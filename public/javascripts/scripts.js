@@ -20,15 +20,37 @@ function upvote(id) {
     $('#'+id.toString()).find(".up a").css('color','rgb(199, 199, 199)');
     $.post("/votes/up/", { postid: id }, (data) => {
         document.cookie = "votes="+JSON.stringify(data);
+        var count = $('#'+id.toString()).find('.count').html()
+        if ($('#'+id.toString()).find(".down").hasClass('down-pressed')) {
+            count = parseInt(count)+2;
+            $('#'+id.toString()).find('.count').html(count)
+        } else if ($('#'+id.toString()).find(".up").hasClass('up-pressed')) {
+            count = parseInt(count)-1;
+            $('#'+id.toString()).find('.count').html(count)
+        } else {
+            count = parseInt(count)+1;
+            $('#'+id.toString()).find('.count').html(count)
+        }
         $('#'+id.toString()).find(".up").toggleClass('up-pressed')
         $('#'+id.toString()).find(".down").removeClass('down-pressed')   
-    
     });
+    
 }
 
 function downvote(id) {
     $.post("/votes/down/", { postid: id }, (data) => {
         document.cookie = "votes="+JSON.stringify(data);
+        var count = $('#'+id.toString()).find('.count').html()
+        if ($('#'+id.toString()).find(".up").hasClass('up-pressed')) {
+            count = parseInt(count)-2;
+            $('#'+id.toString()).find('.count').html(count)
+        } else if ($('#'+id.toString()).find(".down").hasClass('down-pressed')) {
+            count = parseInt(count)+1;
+            $('#'+id.toString()).find('.count').html(count)
+        } else {
+            count = parseInt(count)-1;
+            $('#'+id.toString()).find('.count').html(count)
+        }
         $('#'+id.toString()).find(".down").toggleClass('down-pressed')
         $('#'+id.toString()).find(".up").removeClass('up-pressed')
     });
@@ -50,13 +72,14 @@ function get_cookies() {
 $(document).ready(function() {
     
     for(var name in upvotes) {
-        console.log(upvotes[name]);
         $("#"+upvotes[name].toString()).find(".up").addClass('up-pressed');
     }
 
     for(var name in downvotes) {
-        console.log(upvotes[name]);
         $("#"+downvotes[name].toString()).find(".down").addClass('down-pressed');
+    
     }
+
+    
 
 });

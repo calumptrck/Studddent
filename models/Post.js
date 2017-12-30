@@ -10,10 +10,19 @@ const postSchema = new Schema({
     feature: String,
     features: [String],
     votes: {
-        up: Number,
-        down: Number
+        up: {
+            type: Number,
+            default: 0
+        },
+        down: {
+            type: Number,
+            default: 0
+        },
     },
-    image: String
+    image: {
+        type: String,
+        default: 'https://i.imgur.com/HLBILGL.png'
+    },
 });
 
 let Post = module.exports = mongoose.model('Post', postSchema);

@@ -21,7 +21,9 @@ router.post('/up/', function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                 console.log('updated db - '+doc);
+                 console.log('updated db - ');
+                 console.log(doc);
+                 
              }
         });
         upvotes.splice(upvotes.indexOf(postid),1);
@@ -39,7 +41,8 @@ router.post('/up/', function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                 console.log('updated db - '+doc);
+                console.log('updated db - ');
+                console.log(doc);
              }
         });
         upvotes.push(postid);
@@ -56,7 +59,8 @@ router.post('/up/', function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                 console.log('updated db - '+doc);
+                console.log('updated db - ');
+                console.log(doc);
              }
         });
 
@@ -86,7 +90,8 @@ router.post('/down/', function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                 console.log('updated db - '+doc);
+                console.log('updated db - ');
+                console.log(doc);
              }
         });
         downvotes.splice(downvotes.indexOf(postid),1);
@@ -103,7 +108,8 @@ router.post('/down/', function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                 console.log('updated db - '+doc);
+                console.log('updated db - ');
+                console.log(doc);
              }
         });
         downvotes.push(postid);
@@ -120,7 +126,8 @@ router.post('/down/', function(req, res, next) {
             if (err) {
                 console.log(err);
             } else {
-                 console.log('updated db - '+doc);
+                console.log('updated db - ');
+                console.log(doc);
              }
         });
         downvotes.push(postid);
