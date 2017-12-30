@@ -18,19 +18,8 @@
                   <div class="middle">
                     <div class="headline"><%= post.name %></div>
                     <div class="url">
-                      <script language=javascript>
-                      var txt='<%= post.url %>>';
-                
-                      var re1='.*?';	// Non-greedy match on filler
-                      var re2='((?:[a-z][a-z\\.\\d\\-]+)\\.(?:[a-z][a-z\\-]+))(?![\\w\\.])';	// Fully Qualified Domain Name 1
-                
-                      var p = new RegExp(re1+re2,["i"]);
-                      var m = p.exec(txt);
-                      if (m != null)
-                      {
-                          var fqdn1=m[1];
-                          document.write(fqdn1.replace(/</,"&lt;"));
-                      }
+                      <script language='javascript'>
+                        document.write(regURL('<%= post.url %>'));
                       </script>
                       </div>
                     <div class="feature"><%= post.feature %></div>
@@ -44,9 +33,9 @@
                   </div>
                 </div>
                 <div class="voting">
-                  <div class="up"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a></div>
+                  <div class="up"><a href="javascript:upvote('<%= post._id %>')"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a></div>
                   <div class="count"><%= post.votes.up - post.votes.down %></div>
-                  <div class="down"><a href="#"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></div>
+                  <div class="down"><a href="javascript:downvote('<%= post._id %>')"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></div>
                 </div>
             </div>
             </a>

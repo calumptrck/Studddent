@@ -21,7 +21,7 @@ body {
 }
 
 .addDiscount {
-  background-color: #f3e45d;
+  background-color: rgb(243, 228, 93);
   margin-top: 20px;
   margin-bottom: 60px;
   border-radius: 0.75em;
@@ -45,13 +45,15 @@ body {
   float: left;
   margin-bottom: 30px;
   position: relative;
-  -moz-transition:background-color .15s ease-in;
-  -o-transition:background-color .15s ease-in;
-  -webkit-transition:background-color .15s ease-in;
+  -moz-transition:background-color .15s ease-in, box-shadow .15s ease-in;
+  -o-transition:background-color .15s ease-in, box-shadow .15s ease-in;
+  -webkit-transition:background-color .15s ease-in, box-shadow .15s ease-in;
+  
 }
 
 .entry:hover {
   background-color: rgb(58, 63, 73);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
   
 }
 
@@ -68,7 +70,7 @@ body {
 }
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .entry {
     height: 160px;
   }
@@ -143,7 +145,7 @@ body {
   color: rgb(199, 199, 199);  
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .features {
     margin-left: 300px;
     padding: 20px;
@@ -165,6 +167,10 @@ body {
   color: #eed954 !important
 }
 
+.up .pressed {
+  color: #eed954 !important
+}
+
 .down a:visited, a:link, a:active {
   text-decoration: none;
   color: rgb(199, 199, 199);
@@ -174,6 +180,9 @@ body {
   color: rgb(167, 167, 167);
 }
 
+.down .pressed {
+  color: rgb(167, 167, 167);
+}
 
 .count {
   font-family: Work Sans;
