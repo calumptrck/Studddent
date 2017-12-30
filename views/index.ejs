@@ -8,7 +8,7 @@
     <div class="entries">
         <% posts.forEach(function(post){ %>
           <a href="<%= post.url %>">
-          <div class="block">
+          <div class="block"  id="<%= post._id %>">
               <div class="entry">
                   <div class="tnbg">
                     <img src="<%= post.image %>" alt="<%= post.name %>>"/>

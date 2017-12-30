@@ -167,7 +167,7 @@ body {
   color: #eed954 !important
 }
 
-.up .pressed {
+.up-pressed a {
   color: #eed954 !important
 }
 
@@ -180,7 +180,7 @@ body {
   color: rgb(167, 167, 167);
 }
 
-.down .pressed {
+.down-pressed a {
   color: rgb(167, 167, 167);
 }
 
