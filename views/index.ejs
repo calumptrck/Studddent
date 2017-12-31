@@ -1,9 +1,14 @@
 <% include header %>
   <body>
     <div class="container">
-    <h1 class="title">Studddent.</h1>
+    <h1 class="title">Studddent.</h1> 
     <p class="desc">Curated list of the best online student discounts.</p>
-    <a href="/add"><button type="button" class="btn addDiscount">Add a Discount</button></a>
+    <a href="/add"><button type="button" class="btn addDiscount">Submit a Discount</button></a>
+     <% if ( messages[0] ) { %>
+    <div class="alert alert-success mt-2" role="alert">
+      <%= messages[0] %>
+    </div>
+  <% } %>
     <hr>
     <div class="entries">
         <% posts.forEach(function(post){ %>
@@ -12,7 +17,7 @@
               <div class="entry">
                   <div class="tnbg">
                   <span class="helper"></span>
-                    <img src="<%= post.image %>" alt="<%= post.name %>>"/>
+                    <img src="<%= post.image %>" alt="<%= post.name %>"/>
                   </div>
                   
                   

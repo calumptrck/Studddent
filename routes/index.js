@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var flash = require('connect-flash');
 
 import postController from './../controllers/postController'
 
@@ -24,17 +25,16 @@ router.get('/', (req, res, next) => {
     var cookieVotes = JSON.parse(req.cookies.votes);
   }
 
-  Post.find({}).sort([['votes.up', 'descending']]).exec((err, posts) => {
+  Post.find({"accepted":true}).sort([['votes.up', 'descending']]).exec((err, posts) => {
     if (err) {
       console.log(err);
     } else {
       res.render('index', {
           title: 'studddent.',
           posts: posts,
+          messages: req.flash('success')
       });
     }
-    console.log(posts[0]);
-    
   });
   
 });

@@ -1,4 +1,5 @@
 import dbpost from './../models/Post';
+var flash = require('connect-flash');
 
 const postController = {};
 
@@ -22,10 +23,14 @@ postController.post = (req, res) => {
         url,
         feature,
         features,
-        image
+        image,
+        accepted: "false"
     });
 
     post.save().then((newPost) => {
+        console.log("Post Submitted:");
+        console.log(newPost);
+        req.flash('success','Submission Received!');
         res.status(200).redirect('/');
     }).catch((err) => {
         res.status(500).json({

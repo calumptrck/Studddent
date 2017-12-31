@@ -5,8 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-
-
+var session = require('express-session');
+var flash = require('connect-flash');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -23,7 +23,6 @@ mongoose.connect('mongodb://localhost:27017/studddent', () => {
 var app = express();
 
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -36,7 +35,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// flash
+app.use(session({
+  secret: 'xdxd',
+  saveUninitialized: true,
+  resave: true
+}));
+app.use(flash());
 
+app.all('/express-flash', (req, res) => {
+  req.flash('success', 'This is a flash message using the express-flash module.');
+  res.redirect(301, '/');
+});
 
 app.use('/', index);
 app.use('/users', users);

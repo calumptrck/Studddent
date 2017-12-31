@@ -5,6 +5,10 @@ const { Schema } = mongoose;
 mongoose.Promise = global.Promise;
 
 const postSchema = new Schema({
+    accepted: {
+        type: Boolean,
+        default: false
+    },
     name: String,
     url: String,
     feature: String,

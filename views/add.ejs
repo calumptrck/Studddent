@@ -1,7 +1,7 @@
 <% include header %>
 <body>
     <div class="container">
-        <div class="ad"><a href="/"><h1 class="title">Add a Discount.</h1></a></div>
+        <div class="ad"><a href="/"><h1 class="title">Submit a Discount.</h1></a></div>
         <hr>
         <div class="addForm mt-5">
         <form action="/newpost" method="POST" name="addForm">
@@ -22,17 +22,17 @@
 
             <div class="form-group">
                 <label for="exampleInputPassword1">Primary Feature</label>
-                <input name="f1" type="text" class="form-control" id="exampleInputPassword1" placeholder="eg. Free Two-Day Shipping">
+                <input name="f1" type="text" maxlength="40" class="form-control" id="exampleInputPassword1" placeholder="eg. Free Two-Day Shipping">
                 <small required="true"id="text" class="form-text text-muted">required</small>
             </div>
             <div class="form-group">
                 <label for="lengthOfPromo">Second Feature</label>
-                <input name="f2" type="text" class="form-control" id="exampleInputPassword1" placeholder="eg. Photo Storage">
+                <input name="f2" type="text" maxlength="40" class="form-control" id="exampleInputPassword1" placeholder="eg. Photo Storage">
                 <small id="text" class="form-text text-muted">optional</small>
             </div>
             <div class="form-group">
                 <label for="lengthOfPromo">Third Feature</label>
-                <input name="f3" type="text" class="form-control" id="exampleInputPassword1" placeholder="eg. Twitch Prime Included">
+                <input name="f3" type="text"  maxlength="40" class="form-control" id="exampleInputPassword1" placeholder="eg. Twitch Prime Included">
                 <small id="text" class="form-text text-muted">optional</small>
             </div>
             <hr>
