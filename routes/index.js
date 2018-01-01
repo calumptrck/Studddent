@@ -30,7 +30,7 @@ router.get('/', (req, res, next) => {
       console.log(err);
     } else {
       res.render('index', {
-          title: 'studddent.',
+          title: 'Studddent. — Best Online Student Discounts',
           posts: posts,
           messages: req.flash('success')
       });
