@@ -23,6 +23,8 @@
     "babel-preset-es2015": "^6.24.1",
     "connect-flash": "^0.1.1",
     "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
     "mongoose": "^4.13.7"
   }
 }
