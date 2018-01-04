@@ -1,7 +1,9 @@
 # Studddent
-A curated list of online student discounts for developers and designers. Upvote/Downvote and add your own links.
 
+A powerful, curated stash of resources for students 🎒🙇‍♂️ 
+
+Upvote/downvote on links, and submit your own. [Link](https://studddent.com/)
 
 ![Preview](https://raw.githubusercontent.com/calumptrck/Studddent/master/preview.png)
 
-[Link](https://studddent.com/)
+
