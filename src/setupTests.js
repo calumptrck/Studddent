@@ -1,5 +1,7 @@
 const localStorageMock = {
-  getItem: jest.fn(),
+  getItem: jest.fn(() => {
+    return '{ "up":[], "down":[] }'
+  }),
   setItem: jest.fn(),
   clear: jest.fn()
 };
@@ -10,4 +12,3 @@ const JSONMock = {
 };
 
 global.localStorage = localStorageMock;
-global.JSON = JSONMock;

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product has a valid snapshot 1`] = `
+<div
+  className="productBox"
+>
+  <div
+    className="previewImage"
+  >
+    <span
+      className="helper"
+    />
+    <img
+      alt="preview"
+      src="https://dwa5x7aod66zk.cloudfront.net/assets/sdp-backpack-a64038716bf134f45e809ff86b9611fb97e41bbd2ccfa3181da73cf164d3c200.png"
+    />
+  </div>
+  <div
+    className="info"
+  >
+    <div
+      className="infoText"
+    >
+      <h1>
+        Student Developer Pack
+      </h1>
+      <div
+        className="promo"
+      >
+        Free While You're a Student
+      </div>
+    </div>
+    <div
+      className="tags"
+    >
+      <div
+        className="tag"
+      >
+        DEVELOPMENT
+      </div>
+      <div
+        className="tag"
+      >
+        BUNDLE
+      </div>
+    </div>
+  </div>
+  <div
+    className="voting"
+  >
+    <div
+      className="visit"
+    >
+      <a
+        href="https://education.github.com/pack"
+      >
+        <button
+          className="getButton grow2 shadow2"
+          type="button"
+        >
+          VIEW
+        </button>
+      </a>
+    </div>
+    <div
+      className="score"
+    >
+      <div
+        className="upThumb"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-thumbs-up neutral"
+        />
+      </div>
+      <p>
+        369
+      </p>
+      <div
+        className="downThumb"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-thumbs-down neutral"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

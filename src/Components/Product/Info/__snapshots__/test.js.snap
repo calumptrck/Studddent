@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home has a valid snapshot 1`] = `
+<div
+  className="info"
+>
+  <div
+    className="infoText"
+  >
+    <h1 />
+    <div
+      className="promo"
+    />
+  </div>
+  <div
+    className="tags"
+  >
+    <div
+      className="tag"
+    >
+      DESIGN
+    </div>
+    <div
+      className="tag"
+    >
+      DEVELOPMENT
+    </div>
+    <div
+      className="tag"
+    >
+      UTILITY
+    </div>
+  </div>
+</div>
+`;

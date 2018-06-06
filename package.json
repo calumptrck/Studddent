@@ -5,8 +5,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "fetch-mock": "^6.4.3",
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
@@ -18,5 +21,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/Components/**/*.js"
+    ]
   }
 }

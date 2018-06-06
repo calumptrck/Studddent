@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home has a valid snapshot 1`] = `
+<div
+  className="signup"
+>
+  <h4
+    className="mailtitle mt-3"
+  >
+    Interested in this project?
+  </h4>
+  <p
+    className="maildesc mb-4"
+  >
+    Sign up below to receive notifications for trending discounts, and updates on the project.
+  </p>
+  <div
+    id="mc_embed_signup"
+  >
+    <form
+      action="https://calumpatrick.us3.list-manage.com/subscribe/post?u=b22b8149f5595dcf86cd74955&id=0385a5d217"
+      className="validate"
+      id="mc-embedded-subscribe-form"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      noValidate={true}
+      target="_blank"
+    >
+      <div
+        id="mc_embed_signup_scroll"
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="mce-EMAIL"
+          >
+            Email Address
+          </label>
+          <input
+            className="required form-control"
+            id="mce-EMAIL"
+            name="EMAIL"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          className="clear"
+          id="mce-responses"
+        >
+          <div
+            className="response"
+            id="mce-error-response"
+          />
+          <div
+            className="response"
+            id="mce-success-response"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          className="hiddenInput"
+        >
+          <input
+            name="b_b22b8149f5595dcf86cd74955_0385a5d217"
+            tabIndex="-1"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="clear"
+        >
+          <button
+            className="getButton grow2 shadow2"
+            onClick={undefined}
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
