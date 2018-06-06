@@ -1,0 +1,27 @@
+
+.tags {
+  display: block;
+}
+
+.tag {
+  color: rgb(138, 138, 138);
+  margin-right: 12px;
+  padding: 6px 14px 6px 14px;
+  border: solid 2px #eee;
+  border-radius: .75em;
+  display: inline;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  user-select: none;
+}
+
+@media screen and (max-width: 535px) {
+  .tags {
+    margin-left: -4px;
+  }
+
+  .tag {
+    font-size: 11px;
+  }
+}

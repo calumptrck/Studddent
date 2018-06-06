@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 70px 0px 50px 0px;
+  box-shadow: 0 18px 40px 0 hsla(0, 0%, 40%, 0.02);
+  display: block;
+  min-height: 170px;
+}
+
+.a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 1px;
+}
+
+.title {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+a .title {
+  color: #292B2C;
+}
+
+.desc {
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+}

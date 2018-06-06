@@ -1,0 +1,35 @@
+
+.previewImage {
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  border-top-left-radius: 0.75em;
+  border-bottom-left-radius: 0.75em;
+  padding: 2px;
+  white-space: nowrap;
+  text-align: center; margin: 0 0;
+}
+
+img {
+  vertical-align: middle;
+  width: auto;
+  max-width: 80%;
+  max-height: 50px;
+
+}
+
+.helper {    /* Vertical Center Thumbnails */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 535px) {
+  .previewImage {
+    float: none;
+    height: 100px;
+    width: 100%;
+    border-bottom-left-radius: 0em;
+  }
+}

@@ -1,0 +1,86 @@
+.voting {
+  height: 100%;
+  width: 20%;
+  float: left;
+  background-color: #fff;
+  border-top-right-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+  text-align: center;
+}
+
+.score {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 12px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 30px;
+  
+}
+
+.score a:visited, a:link, a:active {
+  text-decoration: none;
+  color: #ababab;
+}
+
+.score p {
+  float: left;
+  padding: 0px 15px 0px 15px;
+  color: #717171;
+}
+
+.upThumb, .downThumb {
+  cursor: pointer;
+}
+
+.score .upThumb, .downThumb {
+  float: left;
+  color: rgb(187, 187, 187);
+  font-size: 24px;
+}
+
+
+.visit {
+  height: 60px;
+}
+
+.upThumb .up {
+  color: #0099F0;
+}
+
+.downThumb .down {
+  color: #FF2F68;
+}
+
+@media screen and (max-width: 991px) {
+  .score {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .voting {
+    width: 25%;
+  }
+  .score {
+    margin-left: 14px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .voting {
+    border-top-right-radius: 0em;
+    border-top: solid 2px #eee;
+    width: 30%;
+    height: 150px;
+  }
+
+  .score {
+    margin-left: 7%;
+  }
+  
+  .score p {
+    padding: 0px 9% 0px 9%;
+  }
+}

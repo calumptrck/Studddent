@@ -1,0 +1,52 @@
+.info {
+  float: left;
+  background-color: rgb(208, 208, 208);
+  background-color: #fff;
+  border-right: solid 2px #eee;
+  border-left: solid 2px #eee;
+  height: 100%;
+  width: 60%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 23px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+.promo {
+  font-family: Roboto, sans-serif;
+  margin-top: -3px;
+  font-size: 15px;
+  color: rgb(0, 124, 196);
+  font-weight: 500;
+}
+
+.infoText {
+  height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 21px;
+  }
+
+  .info {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .info {
+    border-left: none;
+    border-top: solid 2px #eee;
+    border-bottom-left-radius: 0.75em;
+    width: 70%;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}

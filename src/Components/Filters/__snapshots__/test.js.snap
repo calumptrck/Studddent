@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Has one active button 1`] = `
+<button
+  className={undefined}
+  id={undefined}
+  onClick={undefined}
+  type="button"
+/>
+`;

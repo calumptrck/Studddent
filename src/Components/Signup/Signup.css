@@ -1,0 +1,65 @@
+
+
+.signup {
+  margin-top: 70px;
+  display:inline-block;
+}
+
+.mailtitle {
+  font-family: Work Sans, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.maildesc {
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.subscribe {
+  background-color: rgb(243, 228, 93);
+  margin-bottom: 20px;
+  border-radius: 0.75em;
+  font-size: 15px;
+}
+
+.subscribe:hover {
+  background-color: rgb(255, 235, 57), 228, 93;
+}
+
+.response {
+  display: none;
+}
+
+.hiddenInput {
+  position: absolute; 
+  left: -5000px;
+}
+
+.required {
+  border-radius: 1em;
+}
+
+.grow2 { 
+  transition: all .24s cubic-bezier(0,.5,.51,1); }
+.grow2:hover { transform: scale(1.08); }
+
+.shadow2 {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+  -moz-box-shadow:    0 12px 25px rgba(0,0,0,0.04);
+  -webkit-box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+}
+
+.shadow2:hover {
+  box-shadow: 0 14px 25px rgba(0,0,0,0.08);
+  -moz-box-shadow:    0 14px 25px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 14px 25px rgba(0,0,0,0.08);
+}
+
+.clear {
+  height: 50px;
+  margin-top: -40px;
+  margin-bottom: 80px;
+}

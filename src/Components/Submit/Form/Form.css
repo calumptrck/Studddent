@@ -1,0 +1,10 @@
+.submit {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.submitButton {
+  height: 80px;
+  text-align: center;
+}

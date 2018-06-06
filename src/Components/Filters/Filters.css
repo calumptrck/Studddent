@@ -1,0 +1,22 @@
+.filtersContainer {
+  margin-top: 40px;
+  display: block;
+  height: 120px;
+}
+
+.filters {
+  margin-top: 10px;
+  float: right;
+}
+
+
+input {
+  float: left;
+}
+
+@media screen and (max-width: 992px) {
+  .filters {
+    float: none;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,57 @@
+
+.filterButton {
+  float: left;
+  padding-right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(135, 135, 135);
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  transition: all .26s cubic-bezier(0,.5,.51,1);
+  background: none;
+  border: none;
+  border-radius: 1.5em;
+  padding: 10px 18px 10px 18px;
+  letter-spacing: 0.9px;
+  margin-left: 10px;
+}
+
+.active {
+  background-image: linear-gradient(-180deg,#FF6A57 0,#FF2F68 100%);
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.06);
+}
+
+.filterButton:hover {
+  background-image: linear-gradient(-180deg,#FF6A57 0,#FF2F68 100%);
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.06);
+  transform: scale(1.06);
+}
+
+button:focus {outline:0;}
+
+@media screen and (max-width: 992px) {
+  .filters {
+    margin-left: 15px;
+  }
+
+  .filterButton {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .filters > :last-child {margin-right: 0 !important; }
+}
+
+@media screen and (max-width: 537px) {
+  .filters {
+    margin-left: 0px;
+    
+  }
+  .filterButton {
+    margin-right: 0px;
+    font-size: 12px;
+    padding: 10px 14px 10px 14px;
+  }
+}

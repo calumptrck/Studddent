@@ -1,0 +1,28 @@
+input {
+  height: 55px;
+  width: 40%;
+  padding: 1em;
+  padding-left: 1.5em;
+  margin-bottom: 10px;
+  background-color: #F6F6F8;
+  color: #450b0b;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  border-radius: 2em;
+  transition: all 150ms;
+  border: solid 3px rgb(237, 237, 237);
+  display: block;
+}
+
+input:focus {
+  border: solid 3px #FF6A57;
+}
+
+@media screen and (max-width: 992px) {
+  input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

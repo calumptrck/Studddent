@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home has a valid snapshot 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <div
+      className="container"
+    >
+      <a
+        href="/"
+      >
+        <h1
+          className="title"
+        >
+          Studddent.
+        </h1>
+      </a>
+      <p
+        className="desc"
+      >
+        Resources for learning design & development, discounted for students.
+      </p>
+      <a
+        href="/submit"
+      >
+        <button
+          className="btn addDiscount grow2 shadow2"
+          type="button"
+        >
+          Submit a Discount
+        </button>
+      </a>
+    </div>
+  </div>
+  <div
+    className="container filtersContainer"
+  >
+    <input
+      aria-describedby="search"
+      autoComplete="off"
+      id="search"
+      name="email"
+      onChange={[Function]}
+      placeholder="Search for products"
+      type="text"
+    />
+    <div
+      className="filters"
+    >
+      <button
+        className="filterButton active"
+        id={undefined}
+        onClick={[Function]}
+        type="button"
+      >
+        ALL
+      </button>
+      <button
+        className="filterButton default"
+        id={undefined}
+        onClick={[Function]}
+        type="button"
+      >
+        DESIGN
+      </button>
+      <button
+        className="filterButton default"
+        id={undefined}
+        onClick={[Function]}
+        type="button"
+      >
+        DEVELOPMENT
+      </button>
+      <button
+        className="filterButton default"
+        id={undefined}
+        onClick={[Function]}
+        type="button"
+      >
+        UTILITY
+      </button>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="contentBox"
+    >
+      <div
+        className="viewMore"
+      />
+    </div>
+  </div>
+</div>
+`;

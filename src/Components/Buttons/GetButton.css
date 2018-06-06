@@ -1,0 +1,49 @@
+a {
+  display: inline-block;
+}
+
+.getButton {
+  background-color: #fff;
+  border: solid 2px rgb(39, 151, 244);
+  font-family: Roboto, sans-serif;
+  color: rgb(39, 151, 244);
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: .8em;
+  padding: 7px 35px 7px 35px;
+  font-size: 17px;
+  letter-spacing: 0.9px;
+  cursor: pointer;
+  transition: all .24s cubic-bezier(0,.5,.51,1) padding 3s;
+  display: inline-block;
+  backface-visibility: hidden;
+}
+
+.getButton:hover {
+  border: none;
+  background-image: linear-gradient(-90deg,rgb(71, 187, 255) 0,rgb(39, 151, 244) 100%);
+  color: #fff;
+  padding: 9px 24px 9px 24px;
+}
+
+.grow2 { 
+  transition: all .24s cubic-bezier(0,.5,.51,1); }
+.grow2:hover { transform: scale(1.08); }
+
+.shadow2 {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+  -moz-box-shadow:    0 12px 25px rgba(0,0,0,0.04);
+  -webkit-box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+}
+
+.shadow2:hover {
+  box-shadow: 0 14px 25px rgba(0,0,0,0.08);
+  -moz-box-shadow:    0 14px 25px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 14px 25px rgba(0,0,0,0.08);
+}
+
+@media screen and (max-width: 535px) {
+  .getButton {
+    padding: 7px 20px 7px 20px;
+  }
+}
