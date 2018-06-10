@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Search from './Search';
 
-// Todo - Number of callbacks after entering a word
+// To Test - Number of callbacks after entering a word
 
 const searcUpdate = jest.fn();
 

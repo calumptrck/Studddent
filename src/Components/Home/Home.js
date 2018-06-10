@@ -10,13 +10,13 @@ import MoreButton from '../Buttons/MoreButton';
 import AddButton from '../Buttons/AddButton';
 import './Home.css';
 
-const PATH_BASE = 'https://studddent.com/api/';
+const PATH_BASE = 'https://studddent.com/api';
 
 const isSearched = searchTerm => item =>
   item.name.toLowerCase().includes(searchTerm.toLowerCase());
 
 const vote = (id, type) => {
-  axios.post(`${PATH_BASE}votes/${type}`, {
+  axios.post(`${PATH_BASE}/votes/${type}`, {
     postid: id,
   }).catch((error) => console.log(error));
 }
@@ -163,7 +163,7 @@ class Home extends Component {
   }
 
   fetchTasks() {
-    axios(`${PATH_BASE}links`)
+    axios(`${PATH_BASE}/links`)
       .then(result => this._isMounted && this.setState({ products: result.data, filteredProducts: result.data }))
       .catch(error => this._isMounted && this.setState({ error: error }));
   }
@@ -182,7 +182,7 @@ class Home extends Component {
   }
 
   render() {
-    const { buttons, products, votes, count, filteredProducts } = this.state;
+    const { buttons, products, upVote, downVote, votes, count, filteredProducts } = this.state;
     return (
       <div>
         <Header>
@@ -198,8 +198,8 @@ class Home extends Component {
               .filter(isSearched(this.state.searchTerm))
               .slice(0, count).map((product) =>
                 <Product
-                  upVote={this.upVote}
-                  downVote={this.downVote}
+                  upVote={upVote}
+                  downVote={downVote}
                   key={product._id}
                   product={product}
                   votes={votes} />

@@ -12,7 +12,7 @@ const Product = ({product, upVote, downVote, votes}) => {
   <div className="productBox">
     <PreviewImage src={product.image} />
     <Info title={product.name} promo={product.feature} tags={product.tags} />
-    <Voting upVote={upVote} downVote={downVote} product={product} vote={upIndex >= 0 ? "up" : downIndex >= 0 ? "down" : "neutral"} />
+    <Voting upVote={upVote} downVote={downVote} product={product} voteClass={upIndex >= 0 ? "up" : downIndex >= 0 ? "down" : "neutral"} />
   </div>
   );
 }

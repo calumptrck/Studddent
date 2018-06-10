@@ -6,7 +6,7 @@ import Submit from '../Submit/Submit';
 const Routes = () =>
   <Switch>
     <Route exact path='/' component={Home} />
-    <Route exact path='/submit' component={Submit} />
+    <Route path='/submit' component={Submit} />
   </Switch>
 
 export default Routes;

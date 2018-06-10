@@ -3,16 +3,16 @@ import './Voting.css'
 
 import GetButton from '../../Buttons/GetButton'
 
-const Voting = ({ product, upVote, downVote, vote }) => {
+const Voting = ({ product, upVote, downVote, voteClass }) => {
   return (
     <div className="voting">
       <div className="visit">
         <GetButton url={product.url}>VIEW</GetButton>
       </div>
       <div className="score">
-        <div className="upThumb" onClick={() => upVote(product._id)} href="#"><i className={"fa fa-thumbs-up "+vote} aria-hidden="true"></i></div>
+        <div className="upThumb" onClick={() => upVote(product._id)} href="#"><i className={"fa fa-thumbs-up "+voteClass} aria-hidden="true"></i></div>
         <p>{product.votes.up - product.votes.down}</p>
-        <div className="downThumb" onClick={() => downVote(product._id)}><i className={"fa fa-thumbs-down "+vote} aria-hidden="true"></i></div>
+        <div className="downThumb" onClick={() => downVote(product._id)}><i className={"fa fa-thumbs-down "+voteClass} aria-hidden="true"></i></div>
       </div>
     </div>
   );
