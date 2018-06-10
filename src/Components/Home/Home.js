@@ -18,6 +18,7 @@ const isSearched = searchTerm => item =>
 const vote = (id, type) => {
   axios.post(`${PATH_BASE}/votes/${type}`, {
     postid: id,
+    postK: process.env.REACT_APP_PH,
   }).catch((error) => console.log(error));
 }
 
@@ -182,7 +183,7 @@ class Home extends Component {
   }
 
   render() {
-    const { buttons, products, upVote, downVote, votes, count, filteredProducts } = this.state;
+    const { buttons, products, votes, count, filteredProducts } = this.state;
     return (
       <div>
         <Header>
@@ -198,8 +199,8 @@ class Home extends Component {
               .filter(isSearched(this.state.searchTerm))
               .slice(0, count).map((product) =>
                 <Product
-                  upVote={upVote}
-                  downVote={downVote}
+                  upVote={this.upVote}
+                  downVote={this.downVote}
                   key={product._id}
                   product={product}
                   votes={votes} />
