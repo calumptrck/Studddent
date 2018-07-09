@@ -10,27 +10,27 @@ const filterClick = jest.fn();
 
 
 describe('Buttons Render', () => {
+  it('MoreButton renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<MoreButton type="button" showMore={filterClick}>MoreButton</MoreButton>, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
   it('AddButton renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<AddButton>Test Button</AddButton>, div);
+    ReactDOM.render(<AddButton>AddButton</AddButton>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('FilterButton renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<FilterButton onClick={filterClick} id="foo" className="bar">Test Button</FilterButton>, div);
+    ReactDOM.render(<FilterButton onClick={filterClick} id="foo" className="bar">FilterButton</FilterButton>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('GetButton renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<GetButton url="#">Test Button</GetButton>, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-
-  it('MoreButton renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<MoreButton type="button" showMore={filterClick}>Test Button</MoreButton>, div);
+    ReactDOM.render(<GetButton url="#">GetButton</GetButton>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
