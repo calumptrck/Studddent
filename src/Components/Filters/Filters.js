@@ -13,7 +13,7 @@ const Filters = ({buttons, buttonClick, searchUpdate}) =>
         className={"filterButton" + (button.active ? " active" : " default")}
         key={button.id}
         onClick={() => buttonClick(button.id)}
-        >{button.label}
+        >{button.label.toUpperCase()}
         </FilterButton>
     )}
     </div>

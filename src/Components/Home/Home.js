@@ -32,22 +32,22 @@ class Home extends Component {
       buttons: [
         {
           id: 0,
-          label: "ALL",
-          active: true,
+          label: "All",
+          active: false,
         },
         {
           id: 1,
-          label: "DESIGN",
+          label: "Design",
           active: false,
         },
         {
           id: 2,
-          label: "DEVELOPMENT",
+          label: "Development",
           active: false,
         },
         {
           id: 3,
-          label: "UTILITY",
+          label: "Utility",
           active: false,
         },
       ],
@@ -69,6 +69,9 @@ class Home extends Component {
     const buttons = this.state.buttons
     for (let i = 0; i < buttons.length; i++) {
       if (i === id) {
+        document.title = (id > 0) 
+          ? this.state.buttons[id].label+" Student Discounts"
+          : "Studddent - Best Online Student Discounts.";
         buttons[i].active = true;
         filteredProducts = products.filter((product) =>
           i === 0 || product.tags.indexOf(buttons[i].label.toLowerCase()) >= 0);
@@ -164,8 +167,12 @@ class Home extends Component {
   }
 
   fetchTasks() {
+    const {pageId} = this.props;
     axios(`${PATH_BASE}/links`)
-      .then(result => this._isMounted && this.setState({ products: result.data, filteredProducts: result.data }))
+      .then(result => {
+        this._isMounted && this.setState({ products: result.data, filteredProducts: result.data })
+        pageId >= 0 && this.filterButtonClick(pageId)
+      })
       .catch(error => this._isMounted && this.setState({ error: error }));
   }
 
@@ -188,7 +195,7 @@ class Home extends Component {
       <div>
         <Header>
           <a href="/"><h1 className="title">Studddent.</h1></a>
-          <p className="desc">Resources for learning design & development, discounted for students.</p>
+          <p className="desc">Best online student discounts. Resources for learning design & development.</p>
           <AddButton path={'/submit'}>Submit a Discount</AddButton>
         </Header>
         <Filters buttons={buttons} buttonClick={this.filterButtonClick} searchUpdate={this.onSearchChange} />
