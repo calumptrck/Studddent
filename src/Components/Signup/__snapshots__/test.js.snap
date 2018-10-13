@@ -42,7 +42,6 @@ exports[`Home has a valid snapshot 1`] = `
             id="mce-EMAIL"
             name="EMAIL"
             type="email"
-            value=""
           />
         </div>
         <div

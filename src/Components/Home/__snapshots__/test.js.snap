@@ -20,7 +20,7 @@ exports[`Home has a valid snapshot 1`] = `
       <p
         className="desc"
       >
-        Resources for learning design & development, discounted for students.
+        Best online student discounts. Resources for learning design & development.
       </p>
       <a
         href="/submit"
@@ -50,7 +50,7 @@ exports[`Home has a valid snapshot 1`] = `
       className="filters"
     >
       <button
-        className="filterButton active"
+        className="filterButton default"
         id={undefined}
         onClick={[Function]}
         type="button"
